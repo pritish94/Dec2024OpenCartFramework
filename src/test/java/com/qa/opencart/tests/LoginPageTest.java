@@ -23,7 +23,7 @@ import io.qameta.allure.Story;
 @Story("US 101: implement login page for open cart application")
 public class LoginPageTest extends BaseTest {
 
-	@Description("checking open cart login page title...")
+	@Description("checking open cart login page title..")
 	@Severity(SeverityLevel.MINOR)
 	@Owner("Pritish")
 	@Test(description = "checking login page title")
