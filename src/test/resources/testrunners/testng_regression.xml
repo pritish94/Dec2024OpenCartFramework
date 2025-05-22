@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Opencart App Test Regression Suite" verbose="4"
-	thread-count="4" parallel="tests">
+	thread-count="5" parallel="tests">
 	
 	<listeners>
 		<listener class-name="com.aventstack.chaintest.plugins.ChainTestListener" />
@@ -91,8 +91,12 @@
 		</classes>
 	</test> 
 
-	 <!--<test name="Register Page Test"> <classes> <class name="com.qa.opencart.tests.RegisterPageTest" 
-		/> </classes> </test>-->
+	 <test name="Register Page Test"> 
+		<parameter name="browser" value="chrome" />
+		<classes> 
+	        <class name="com.qa.opencart.tests.RegisterPageTest"/> 
+	    </classes> 
+	</test>
 
 
 
